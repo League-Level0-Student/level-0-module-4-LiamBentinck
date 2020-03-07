@@ -1,3 +1,5 @@
+int x5 = 360;
+int y5 = 560;
 int x4 = 210;
 int y4 = 750;
 int x3 = 300;
@@ -25,18 +27,22 @@ creeper3.resize(10, 10);
 creeper4=loadImage("creeper4.jpg");     
 creeper4.resize(10, 10);    
 creeper5=loadImage("creeper5.jpg");     
-     
+creeper5.resize(10, 10);
 background(minecraft);
 
 }
 
 void draw() {
   background(minecraft);
-  image(creeper, 360, 560);
+  image(creeper5, 360, 560);
   image(creeper4, 210, 750);
   image(creeper3, 300, 300);
   image(creeper2, 45, 150);
   image(creeper, 100, 0);
+if(mouseX > x5 && mouseX < x5+10 && mouseY > y5 && mouseY < y5+10 && mousePressed){
+  fill(#FF0000);
+  println("You found creeper number 5!");
+}
 if(mouseX > x4 && mouseX < x4+10 && mouseY > y4 && mouseY < y4+10 && mousePressed){
   fill(#FF0000);
   println("You found creeper number 4!");
@@ -64,7 +70,7 @@ if(mouseX > x && mouseX < x+10 && mouseY > y && mouseY < y+10 && mousePressed){
  }
 }
 boolean isNear(int a, int b) {
-if (abs(a - b) < 750)
+if (abs(a - b) < 790)
      return true;
 else
      return false;
