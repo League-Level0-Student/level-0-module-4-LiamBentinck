@@ -1,7 +1,7 @@
 package _10_happy_pet;
 import javax.swing.JOptionPane;
 
-public class  {
+public class {
 	
 	// 2. Add the following variable to the next line: static int happinessLevel = 0;
 	// this will be used to store the happiness of your pet
